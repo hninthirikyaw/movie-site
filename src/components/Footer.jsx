@@ -14,35 +14,35 @@ const Footer = () => {
             nobis saepe totam sed, veritatis corrupti!
           </p>
           <div className=" flex justify-center items-center gap-2 mt-3">
-          <a
-            href="https://www.facebook.com/"
-            target={"_blank"}
-            className=" text-xl text-blue-600 bg-gray-100  p-1 rounded-[100%] hover:text-blue-800 hover:bg-gray-300 cursor-pointer"
-          >
-            <BsFacebook />
-          </a>
-          <a
-            href="https://www.twitter.com/"
-            target={"_blank"}
-            className=" text-xl text-[#1C93E4] bg-gray-100  p-1 rounded-[100%] hover:text-[#1C93E499] hover:bg-gray-300 cursor-pointer"
-          >
-            <BsTwitter />
-          </a>
-          <a
-            href="https://www.whatsapp.com/"
-            target={"_blank"}
-            className=" text-xl text-[#25D366] bg-gray-100  p-1 rounded-[100%] hover:text-[#25D36699] hover:bg-gray-300 cursor-pointer"
-          >
-            <BsWhatsapp />
-          </a>
-          <a
-            href="https://www.whatsapp.com/"
-            target={"_blank"}
-            className=" text-xl text-[#ff0000] bg-gray-100  p-1 rounded-[100%] hover:text-[#ff000099] hover:bg-gray-300 cursor-pointer"
-          >
-            <BsYoutube />
-          </a>
-        </div>
+            <a
+              href="https://www.facebook.com/"
+              target={"_blank"}
+              className=" text-xl text-blue-600 bg-gray-100  p-1 rounded-[100%] hover:text-blue-800 hover:bg-gray-300 cursor-pointer"
+            >
+              <BsFacebook />
+            </a>
+            <a
+              href="https://www.twitter.com/"
+              target={"_blank"}
+              className=" text-xl text-[#1C93E4] bg-gray-100  p-1 rounded-[100%] hover:text-[#1C93E499] hover:bg-gray-300 cursor-pointer"
+            >
+              <BsTwitter />
+            </a>
+            <a
+              href="https://www.whatsapp.com/"
+              target={"_blank"}
+              className=" text-xl text-[#25D366] bg-gray-100  p-1 rounded-[100%] hover:text-[#25D36699] hover:bg-gray-300 cursor-pointer"
+            >
+              <BsWhatsapp />
+            </a>
+            <a
+              href="https://www.youtube.com/"
+              target={"_blank"}
+              className=" text-xl text-[#ff0000] bg-gray-100  p-1 rounded-[100%] hover:text-[#ff000099] hover:bg-gray-300 cursor-pointer"
+            >
+              <BsYoutube />
+            </a>
+          </div>
         </div>
         <div className=" flex flex-col w-[200px] my-3 font-semibold text-md leading-7">
           <h2>DISPLAY TYPE</h2>
