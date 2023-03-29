@@ -1,0 +1,33 @@
+
+
+
+.active{
+  color: red;
+}
+
+.icon{
+  display: none;
+}
+
+.activeButton{
+  background-color: #000;
+  color: aliceblue;
+}
+
+
+
+.parent:hover .parent-hover\:d-flex {
+  display: flex;
+}
+
+.parent:hover{
+  opacity: 0.7;
+}
+
+
+
+.filer{
+  background-color: linear-gradient(#000);
+}
+
+
