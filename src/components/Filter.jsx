@@ -18,7 +18,7 @@ const Filter = ({ setFilter, all, setGenre, genre }) => {
           onClick={(event) => {
             setGenre(0);
           }}
-          className="px-3 py-2 all  bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900 font-semibold"
+          className="px-3 py-2 all border-2 border-red-900  bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900 font-semibold"
         >
           All
         </button>
@@ -26,7 +26,7 @@ const Filter = ({ setFilter, all, setGenre, genre }) => {
           onClick={(event) => {
             setGenre(35);
           }}
-          className=" px-3 py-2 bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
+          className=" px-3 py-2 border-2 border-red-900  bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
         >
           Comedy
         </button>
@@ -34,7 +34,7 @@ const Filter = ({ setFilter, all, setGenre, genre }) => {
           onClick={(event) => {
             setGenre(28);
           }}
-          className=" px-3 py-2 bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
+          className=" px-3 py-2 border-2 border-red-900  bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
         >
           Action
         </button>
@@ -42,7 +42,7 @@ const Filter = ({ setFilter, all, setGenre, genre }) => {
           onClick={(event) => {
             setGenre(27);
           }}
-          className=" px-3 py-2 bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
+          className=" px-3 py-2 border-2 border-red-900  bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
         >
           Horror
         </button>
@@ -50,7 +50,7 @@ const Filter = ({ setFilter, all, setGenre, genre }) => {
           onClick={(event) => {
             setGenre(10749);
           }}
-          className=" px-3 py-2 bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
+          className=" px-3 py-2 border-2 border-red-900  bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
         >
           Romance
         </button>
@@ -58,7 +58,7 @@ const Filter = ({ setFilter, all, setGenre, genre }) => {
           onClick={(event) => {
             setGenre(12);
           }}
-          className=" px-3 py-2 bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
+          className=" px-3 py-2 border-2 border-red-900  bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
         >
           Adventure
         </button>
@@ -67,7 +67,7 @@ const Filter = ({ setFilter, all, setGenre, genre }) => {
           onClick={(event) => {
             setGenre(16);
           }}
-          className=" px-3 py-2 bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
+          className=" px-3 py-2 border-2 border-red-900  bg-red-900 text-white rounded-lg hover:bg-transparent hover:border-2 hover:border-red-900"
         >
           Animation
         </button>

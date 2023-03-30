@@ -33,31 +33,35 @@ const Navbar = () => {
               </Link>
             </div>
             {/* Menu items */}
-            <div className=" hidden md:flex justify-around items-center gap-10 pr-5">
-              <NavLink to={"/"}>
-                <li className=" font-semibold">Home</li>
-              </NavLink>
-              <NavLink to={"/about"}>
-                <li className=" font-semibold">About</li>
-              </NavLink>
-              <NavLink to={"/movies"}>
-                <li className=" font-semibold">Movies</li>
-              </NavLink>
-              <NavLink to={"/contact"}>
-                <li className=" font-semibold">Contact</li>
-              </NavLink>
-              {/* <li>
-                <p className=" text-2xl font-semibold hover:bg-[#ffffff22] w-10 h-10 flex justify-center items-center rounded-[100%] ">
-                  <AiOutlineSearch />
-                </p>
-              </li> */}
+            <div className=" flex gap-2">
+              <div className=" hidden md:flex justify-around items-center gap-10 pr-5">
+                <NavLink to={"/"}>
+                  <li className=" font-semibold">Home</li>
+                </NavLink>
+                <NavLink to={"/about"}>
+                  <li className=" font-semibold">About</li>
+                </NavLink>
+                <NavLink to={"/movies"}>
+                  <li className=" font-semibold">Movies</li>
+                </NavLink>
+                <NavLink to={"/contact"}>
+                  <li className=" font-semibold">Contact</li>
+                </NavLink>
+              </div>
+             
             </div>
             {/* Mobile menu button */}
+            <div>
+
+            </div>
             <div class="md:hidden flex items-center read-only:">
-              <button className=" absolute right-3" onClick={() => showMenu()}>
+              <button className=" absolute right-10" onClick={() => showMenu()}>
                 <AiOutlineMenu />
               </button>
+
+              
             </div>
+
             <div className="hidden mobile-menu mt-10 relative ">
               <ul className=" absolute top-3 right-0 mr-0 rounded-lg bg-slate-800 px-5 py-3 ">
                 <NavLink to={"/"}>
@@ -82,9 +86,7 @@ const Navbar = () => {
                     Contact
                   </li>
                 </NavLink>
-                {/* <li className="mt-2 block bg-[#ffffff11] border-b-2 px-3 py-2 rounded-md font-semibold ">
-                  Search
-                </li> */}
+               
               </ul>
             </div>
           </ul>
