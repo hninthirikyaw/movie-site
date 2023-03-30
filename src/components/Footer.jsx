@@ -67,8 +67,8 @@ const Footer = () => {
         </div>
       </div>
       <div className=" hover:text-red-500 bg-black text-white flex flex-wrap font-semibold justify-around items-center px-5 py-3">
-        <p> &copy; Copyrights and All Rights Reserved </p>
-        <div className=" flex flex-wrap  justify-around gap-10">
+        <p> &copy;Copyrights & All Reserved </p>
+        <div className=" flex flex-wrap  justify-around gap-2">
           <p className="">Terms of Service</p>
           <p className="">Privacy Policy</p>
         </div>
