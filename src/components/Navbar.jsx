@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineSearch, AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 
 import "../App.css";
+
 
 const Navbar = () => {
   const showMenu = () => {
@@ -48,18 +49,21 @@ const Navbar = () => {
                   <li className=" font-semibold">Contact</li>
                 </NavLink>
               </div>
-             
+
+              {/* <Link to={`/search`}>
+                <li>
+                  <p className=" text-2xl font-semibold hover:bg-[#ffffff22] w-10 h-10 flex justify-center items-center rounded-[100%] ">
+                    <AiOutlineSearch />
+                  </p>
+                </li>
+              </Link> */}
             </div>
             {/* Mobile menu button */}
-            <div>
-
-            </div>
+            <div></div>
             <div class="md:hidden flex items-center read-only:">
               <button className=" absolute right-10" onClick={() => showMenu()}>
                 <AiOutlineMenu />
               </button>
-
-              
             </div>
 
             <div className="hidden mobile-menu mt-10 relative ">
@@ -86,31 +90,30 @@ const Navbar = () => {
                     Contact
                   </li>
                 </NavLink>
-               
               </ul>
             </div>
           </ul>
         </div>
       </nav>
       {/* The button to open modal */}
-      {/* <label htmlFor="my-modal-6" className="btn">
-        open modal
-      </label> */}
+      {/* */}
 
       {/* Put this part before </body> tag */}
+      {/* */}
       {/* <input type="checkbox" id="my-modal-6" className="modal-toggle" />
-      <div className="modal modal-bottom sm:modal-middle">
-        <div className="modal-box">
+      <div className="modal modal-bottom sm:modal-middle ">
+        <div className="modal-box bg-gray-300">
           <h3 className="font-bold text-lg">
-            Congratulations random Internet user!
+            Enter the movie name you want to watch
           </h3>
           <p className="py-4">
-            You've been selected for a chance to get one year of subscription to
-            use Wikipedia for free!
+            <form>
+              <input  className=" bg-transparent border border-gray-200 px-3 py-2" type="text" placeholder="Enter Movie Name"  />
+            </form>
           </p>
-          <div className="modal-action">
+          <div className="modal-action" onClick={()=>showAlert()}>
             <label htmlFor="my-modal-6" className="btn">
-              Yay!
+              Find
             </label>
           </div>
         </div>

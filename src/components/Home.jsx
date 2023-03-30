@@ -3,8 +3,7 @@ import "../App.css";
 import { FaForward } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Home = ({originals}) => {
- 
+const Home = ({ originals }) => {
   let random = originals[Math.floor(Math.random() * originals.length)];
   console.log(random);
 
@@ -45,25 +44,29 @@ const Home = ({originals}) => {
               2h 6m
             </p>
           </div>
-          <button className=" mr-3 mt-3 px-3 py-2 bg-red-700 text-white rounded hover:bg-gray-800 ">
+          <button className=" mr-3 mt-3 px-[18px] py-[12px] font-semibold bg-red-900 text-white rounded-lg hover:bg-gray-800 ">
             Play now
           </button>
-          <button className="hover:bg-gray-800  mt-3 px-3 py-2 bg-red-700 text-white rounded">
-            My Lists
-          </button>
+          <label htmlFor="my-modal-6" className="btn font-semibold text-white rounded bg-red-900  px-[18px] py-[12px]   border-none">
+            
+              My Lists
+           
+          </label>
         </div>
       </div>
       {/* Slider section */}
       <div className="bg-[#2A303C] py-5 px-3">
         <div className=" flex flex-wrap justify-between items-center ">
-          <h2 className=" text-white text-xl font-bold tracking-widest text-white-50">TRENDING NOW</h2>
+          <h2 className=" text-white text-xl font-bold tracking-widest text-white-50">
+            TRENDING NOW
+          </h2>
           <Link to={"/movies"}>
-          <div className=" flex gap-2 justify-center items-center bg-red-600 px-2 py-1 rounded-md  hover:bg-red-800">
-            <p className=" text-white ">See All</p>
-            <span className="text-white text-xs">
-              <FaForward />
-            </span>
-          </div>
+            <div className=" flex gap-2 justify-center items-center bg-red-600 px-2 py-1 rounded-md  hover:bg-red-800">
+              <p className=" text-white ">See All</p>
+              <span className="text-white text-xs">
+                <FaForward />
+              </span>
+            </div>
           </Link>
         </div>
         <div className="carousel carousel-center  p-4 space-x-0   w-[100%]">
@@ -129,7 +132,25 @@ const Home = ({originals}) => {
           </div>
         </div>
       </div>
-      
+      {/* The button to open modal */}
+
+      {/* Put this part before </body> tag */}
+      <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+      <div className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box bg-[#22222288]">
+          <h3 className="font-bold  text-white text-3xl">
+            OOPs!
+          </h3>
+          <p className="py-4 text-white font-semibold tracking-wider">
+            You've not any movie list yet!
+          </p>
+          <div className="modal-action">
+            <label htmlFor="my-modal-6" className="btn btn-error">
+              OK
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
